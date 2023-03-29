@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原動物病院</title>
+    <meta property="description" content="原動物病院-「痛い」「苦しい」と言えない 小さな家族のことを 大切にする病院です" />
+    <link rel="icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="sp-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <h2>HOME</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>病院案内</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>施設案内</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>スタッフ紹介</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>よくある質問</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>アクセス</h2>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>お知らせ</h2>
+                    </a>
+                </li>
+            </ul>
+            <div class="mobile-logo">
+                <img src="./assets/img/logo.png">
+            </div>
+            <div class="mobile-phone">
+                <div class="phone">
+                    <img src="./assets/img/phone.png">
+                    <p class="phone-num">0573-65-4632</p>
+                </div>
+                <div>
+                    <address>〒508-0045 岐阜県中津川市かやの木町3-5</address>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <h1>
+                <img src="./assets/img/logo.png" alt="原動物病院">
+                <div class="sp-trigger">
+                    <div  class="sp-menu-trigger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    
+                </div>
+            </h1>
+            <div class="sub-description">
+                <img src="./assets/img/top_kumo.png" alt="top-kumo">
+                <h2>「痛い」「苦しい」と言えない<br>小さな家族のことを<br>大切にする病院です</h2>
+            </div>
+        </div>
+        <div class="pc-menu">
+            <div class="container">
+                <div class="menu-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/tree.png">
+                                <h2>HOME</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/tree.png">
+                                <h2>病院案内</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/tree.png">
+                                <h2>施設案内</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/tree.png">
+                                <h2>スタッフ紹介</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/tree.png">
+                                <h2>よくある質問</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/tree.png">
+                                <h2>アクセス</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./assets/img/tree.png">
+                                <h2>お知らせ</h2>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="top-info">
+                        <div class="phone">
+                            <img src="./assets/img/phone.png">
+                            <p class="phone-num">0573-65-4632</p>
+                        </div>
+                        <div>
+                            <address>〒508-0045 岐阜県中津川市かやの木町3-5</address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section class="">
+
+        </section>
+    </main>
+    <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script>
+        var isMenuOpen = false;
+        $(document).ready(function(){
+            $('.sp-menu-trigger').click(function(){
+                if(isMenuOpen == false) {
+                    isMenuOpen = true;
+                    $(this).toggleClass('open');
+                    $(".sp-trigger").css("border-color","#6EB944")
+                    $(".sp-menu").css({
+                        display:"block",
+                        transform:"translateX(0%)"
+                    })
+                }
+                else {
+                    isMenuOpen = false;
+                    $(this).toggleClass('open');
+                    $(".sp-trigger").css("border-color","transparent");
+                    $(".sp-menu").css("transform","translateX(-100%)")
+                }
+            });
+        });
+    </script>
+</body>
+</html>

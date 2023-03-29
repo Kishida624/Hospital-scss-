@@ -1,0 +1,6 @@
+@mixin bgBasic($url,$position){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: $position;
+}

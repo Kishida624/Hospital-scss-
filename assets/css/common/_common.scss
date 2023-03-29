@@ -1,0 +1,40 @@
+$max-width : 1280px;
+
+@font-face {
+    font-family: "KozGoPro";
+    src: url(../font/KozGoPro.otf);
+}
+@font-face {
+    font-family: "小塚ゴシック Pr6N R";
+    src: url(../font/小塚ゴシックPr6NR.otf);
+}
+
+$font_kozGoPro : "KozGoPro";
+$font_Pr6NR : "小塚ゴシック Pr6N R";
+
+$font_color : #849387;
+
+$font_h2_size : 18px;
+$font_h2_lineH : 24px;
+
+* {
+    box-sizing: border-box;
+}
+ul {
+   list-style: none; 
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: $font_Pr6NR;
+    margin: auto;
+}
+h2 {
+    font-size: $font_h2_size;
+    line-height: $font_h2_lineH;
+}
+.container {
+    max-width: $max-width;
+    margin: auto;
+}
