@@ -369,20 +369,35 @@ h2 {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: auto;
 }
 
 header {
-  background-image: url("../img/top_bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+header .swiper-container {
   width: 100%;
   height: 100vh;
 }
-
-h1 {
+header .swiper-container .swiper-slide {
+  position: relative;
+}
+header .swiper-container .swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .title {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+header .title .container h1 {
   width: 275px;
   position: relative;
   top: 32px;
@@ -392,31 +407,31 @@ h1 {
   justify-content: space-between;
 }
 @media only screen and (max-width: 768px) {
-  h1 {
+  header .title .container h1 {
     top: 0;
     left: 0;
     width: 100%;
     padding: 17px 30px;
   }
 }
-@media only screen and (max-width: 320px) {
-  h1 {
+@media only screen and (max-width: 375px) {
+  header .title .container h1 {
     top: 0;
     left: 0;
     width: 100%;
     padding: 17px 0px;
   }
 }
-h1 .sp-trigger {
+header .title .container h1 .sp-trigger {
   width: 47px;
   height: 47px;
   border: 5px solid transparent;
   border-radius: 50%;
   padding-left: 4px;
   padding-top: 4px;
-  z-index: 1;
+  z-index: 4;
 }
-h1 .sp-trigger .sp-menu-trigger {
+header .title .container h1 .sp-trigger .sp-menu-trigger {
   display: none;
   width: 37px;
   height: 27px;
@@ -425,12 +440,12 @@ h1 .sp-trigger .sp-menu-trigger {
   transition: 0.5s ease-in-out;
   cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
-  h1 .sp-trigger .sp-menu-trigger {
+@media only screen and (max-width: 425px) {
+  header .title .container h1 .sp-trigger .sp-menu-trigger {
     display: block;
   }
 }
-h1 .sp-trigger .sp-menu-trigger span {
+header .title .container h1 .sp-trigger .sp-menu-trigger span {
   display: block;
   position: absolute;
   height: 5px;
@@ -442,34 +457,33 @@ h1 .sp-trigger .sp-menu-trigger span {
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-h1 .sp-trigger .sp-menu-trigger span:nth-child(1) {
+header .title .container h1 .sp-trigger .sp-menu-trigger span:nth-child(1) {
   top: 0px;
   transform-origin: left center;
 }
-h1 .sp-trigger .sp-menu-trigger span:nth-child(2) {
+header .title .container h1 .sp-trigger .sp-menu-trigger span:nth-child(2) {
   top: 11px;
   transform-origin: left center;
 }
-h1 .sp-trigger .sp-menu-trigger span:nth-child(3) {
+header .title .container h1 .sp-trigger .sp-menu-trigger span:nth-child(3) {
   top: 22px;
   transform-origin: left center;
 }
-h1 .sp-trigger .sp-menu-trigger.open span:nth-child(1) {
+header .title .container h1 .sp-trigger .sp-menu-trigger.open span:nth-child(1) {
   transform: rotate(45deg);
   top: 2px;
   left: 5px;
 }
-h1 .sp-trigger .sp-menu-trigger.open span:nth-child(2) {
+header .title .container h1 .sp-trigger .sp-menu-trigger.open span:nth-child(2) {
   width: 0%;
   opacity: 0;
 }
-h1 .sp-trigger .sp-menu-trigger.open span:nth-child(3) {
+header .title .container h1 .sp-trigger .sp-menu-trigger.open span:nth-child(3) {
   transform: rotate(-45deg);
   top: 23px;
   left: 4px;
 }
-
-.sub-description {
+header .title .container .sub-description {
   width: 375px;
   height: 175px;
   position: relative;
@@ -477,11 +491,17 @@ h1 .sp-trigger .sp-menu-trigger.open span:nth-child(3) {
   left: 100px;
 }
 @media only screen and (max-width: 768px) {
-  .sub-description {
+  header .title .container .sub-description {
+    top: 80px;
+    left: 30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  header .title .container .sub-description {
     display: none;
   }
 }
-.sub-description h2 {
+header .title .container .sub-description h2 {
   position: absolute;
   top: 57px;
   width: 260px;
@@ -489,8 +509,7 @@ h1 .sp-trigger .sp-menu-trigger.open span:nth-child(3) {
   text-align: center;
   color: #849387;
 }
-
-.pc-menu {
+header .pc-menu {
   background-image: url("../img/top_line.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -499,71 +518,72 @@ h1 .sp-trigger .sp-menu-trigger.open span:nth-child(3) {
   bottom: 0;
   width: 100%;
   height: 300px;
+  z-index: 1;
 }
-.pc-menu .menu-content {
+header .pc-menu .menu-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 200px;
 }
-.pc-menu .menu-content ul {
+header .pc-menu .menu-content ul {
   display: flex;
+  overflow: auto;
 }
 @media print, screen and (max-width: 991px) {
-  .pc-menu .menu-content ul {
+  header .pc-menu .menu-content ul {
     margin-left: 20px;
   }
 }
-@media only screen and (max-width: 768px) {
-  .pc-menu .menu-content ul {
+@media only screen and (max-width: 425px) {
+  header .pc-menu .menu-content ul {
     display: none;
   }
 }
-.pc-menu .menu-content ul li {
+header .pc-menu .menu-content ul li {
   margin-right: 30px;
   width: -moz-max-content;
   width: max-content;
 }
 @media print, screen and (max-width: 991px) {
-  .pc-menu .menu-content ul li {
+  header .pc-menu .menu-content ul li {
     margin-right: 15px;
   }
 }
-.pc-menu .menu-content ul li a {
+header .pc-menu .menu-content ul li a {
   display: block;
   font-family: "KozGoPro";
   text-decoration: none;
   color: #849387;
 }
-.pc-menu .menu-content ul li a img {
+header .pc-menu .menu-content ul li a img {
   display: block;
   margin: auto;
 }
 @media print, screen and (max-width: 1200px) {
-  .pc-menu .menu-content .top-info {
+  header .pc-menu .menu-content .top-info {
     display: none;
   }
 }
-.pc-menu .menu-content .top-info .phone {
+header .pc-menu .menu-content .top-info .phone {
   display: flex;
   align-items: center;
 }
-.pc-menu .menu-content .top-info .phone img {
+header .pc-menu .menu-content .top-info .phone img {
   width: 30px;
   height: 30px;
   margin-right: 36px;
 }
-.pc-menu .menu-content .top-info .phone .phone-num {
+header .pc-menu .menu-content .top-info .phone .phone-num {
   font-size: 35px;
   color: #849387;
   line-height: 42px;
 }
-.pc-menu .menu-content .top-info address {
+header .pc-menu .menu-content .top-info address {
   font-size: 15px;
   color: #849387;
 }
-
-.sp-menu {
+header .sp-menu {
   display: none;
   position: absolute;
   width: 100%;
@@ -577,15 +597,15 @@ h1 .sp-trigger .sp-menu-trigger.open span:nth-child(3) {
   background-size: cover;
   background-position: bottom;
   background-color: aliceblue;
-  z-index: 1;
+  z-index: 2;
   transition: 0.5s;
 }
-.sp-menu ul {
+header .sp-menu ul {
   position: relative;
   top: 110px;
   width: 100%;
 }
-.sp-menu ul li {
+header .sp-menu ul li {
   width: 200px;
   margin: auto;
   text-align: center;
@@ -594,41 +614,41 @@ h1 .sp-trigger .sp-menu-trigger.open span:nth-child(3) {
   border-radius: 2px;
   margin-bottom: 30px;
 }
-.sp-menu ul li a {
+header .sp-menu ul li a {
   display: block;
   font-family: "KozGoPro";
   text-decoration: none;
   color: #849387;
 }
-.sp-menu ul li a h2 {
+header .sp-menu ul li a h2 {
   font-size: 19px;
 }
-.sp-menu .mobile-logo {
+header .sp-menu .mobile-logo {
   position: relative;
   top: 150px;
 }
-.sp-menu .mobile-logo img {
+header .sp-menu .mobile-logo img {
   display: block;
   width: 200px;
   margin: auto;
 }
-.sp-menu .mobile-phone {
+header .sp-menu .mobile-phone {
   position: relative;
   top: 180px;
   width: -moz-max-content;
   width: max-content;
   margin: auto;
 }
-.sp-menu .mobile-phone .phone {
+header .sp-menu .mobile-phone .phone {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.sp-menu .mobile-phone .phone .phone-num {
+header .sp-menu .mobile-phone .phone .phone-num {
   font-size: 30px;
   color: #849387;
 }
-.sp-menu .mobile-phone div address {
+header .sp-menu .mobile-phone div address {
   font-size: 12px;
   color: #849387;
 }/*# sourceMappingURL=main.css.map */

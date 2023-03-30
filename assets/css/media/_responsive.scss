@@ -1,6 +1,7 @@
 //メディアクエリをmixin化
 $breakpoints: (
-  'ms':'only screen and (max-width: 320px)', 
+  'ms':'only screen and (max-width: 375px)',
+  'ssp': 'only screen and (max-width: 425px)', 
   'sp': 'only screen and (max-width: 768px)', 
   'tb': 'print,screen and (max-width: 991px)', 
   'lb': 'print,screen and (max-width: 1200px)', 
