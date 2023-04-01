@@ -37,4 +37,12 @@ h2 {
 .container {
     max-width: $max-width;
     margin: auto;
+    @include media('lb') {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    @include media('sp') {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

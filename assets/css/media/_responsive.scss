@@ -4,6 +4,7 @@ $breakpoints: (
   'ssp': 'only screen and (max-width: 425px)', 
   'sp': 'only screen and (max-width: 768px)', 
   'tb': 'print,screen and (max-width: 991px)', 
+  'xtb': 'print,screen and (max-width: 1024px)',
   'lb': 'print,screen and (max-width: 1200px)', 
   'full': 'print,screen and (max-width: 1600px)', 
 ) !default;
