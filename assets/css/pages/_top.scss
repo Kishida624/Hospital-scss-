@@ -469,8 +469,276 @@ main {
             }
         }
     }
+    .sec-calendar {
+        @include bgBasic("../img/section02_bg01.png",top);
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        padding-top: 200px;
+        .container {
+            .sec-ttl {
+                text-align: center;
+                .en-ttl {
+                    font-size: 12px;
+                    color: #6EB944;
+                    line-height: 30px;
+                }
+                .ja-ttl {
+                    font-size: 24px;
+                    color: $font_color;
+                    line-height: 30px;
+                }
+            }
+            .calendars {
+                display: flex;
+                justify-content: space-around;
+                .left-side,.right-side {
+                    padding-top: 50px;
+                    width: 360px;
+                    .cal-top {
+                        text-align: center;
+                        display: flex;
+                        width: max-content;
+                        margin: auto;
+                        .cal-ttl {
+                            font-size: 23px;
+                            color: $font_color;
+                        }
+                        .month-num {
+                            width: 60px;
+                            height: 60px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: #E8C01A;
+                            color: #fff;
+                            font-size: 30px;
+                            border-radius: 50%;
+                            margin: 0px 20px;
+                            margin-top: -20px;
+                        }
+                        .month-text {
+                            font-size: 27px;
+                            color: #E8C01A;
+                        }
+                    }
+                    .calendar {
+                        margin-top: 20px;
+                        table {
+                            width: 100%;
+                            text-align: center;
+                            color: $font_color;
+                            thead tr {
+                                background: #E8C01A;
+                                th{
+                                    width: 50px;
+                                    height: 50px;
+                                    div {
+                                        width: 50px;
+                                        height: 50px;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                }
+                            }
+                            tbody 
+                            {
+                                tr{
+                                    td{
+                                        width: 50px;
+                                        height: 50px;
+                                        div {
+                                            width: 50px;
+                                            height: 50px;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        &:last-child {
+                                            background: #F8ECBA;
+                                            color: #EF8337;
+                                        }
+                                        &:nth-child(6) {
+                                            background: #E2F1DA;
+                                            color: #6EB944;
+                                        }
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                    .cal-footer {
+                        padding-top: 20px;
+                        display: flex;
+                        .h-mark {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-right: 20px;
+                            .holiday {
+                                width: 24px;
+                                height: 24px;
+                                background: #F8ECBA;
+                                border: 1px solid #E8C01A;
+                                margin-right: 10px;
+                            }
+                        }
+                        .e-mark {
+                            display: flex;
+                            align-items: center;
+                            margin-right: 20px;
+                            .evening {
+                                width: 24px;
+                                height: 24px;
+                                background: #E2F1DA;
+                                border: 1px solid #E8C01A;
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+                .right-side {
+                    @include media('tb'){
+                        display: none;
+                    }
+                }
+            }
+            p{
+                text-align: center;
+                color: $font_color;
+                font-size: 16px;
+                margin-top: 50px;
+            }
+        }
+    }
+    .introduction {
+        @include bgBasic("../img/section03_bg.png",top);
+        margin-top: 200px;
+        .container {
+            .intro-ttl {
+                text-align: center;
+                .en-ttl {
+                    font-size: 12px;
+                    line-height: 30px;
+                    color: #6EB944;
+                    text-transform: uppercase;
+                }
+                .ja-ttl {
+                    font-size: 24px;
+                    line-height: 30px;
+                    color: $font_color;
+                }
+            }
+            .intro-content {
+                margin-top: 50px;
+                .group-line {
+                    display: flex;
+                    justify-content: space-around;
+                    margin-top: 50px;
+                    @include media('tb') {
+                        display: block;
+                    }
+                    .intro-item {
+                        position: relative;
+                        width: 276px;
+                        margin: auto;
+                        .desc{
+                            width: 100%;
+                            font-size: 16px;
+                            color: $font_color;
+                        }
+                        &.item1 {
+                            left: 100px;
+                            @include media('ssp'){
+                                left: 0;
+                            }
+                        }
+                        &.item2 {
+                            left: 100px;
+                            @include media('ssp'){
+                                left: 0;
+                            }
+                        }
+                        .badge1 {
+                            position: absolute;
+                            top: 0px;
+                            left: -190px;
+                            @include media('ssp'){
+                                left: -90px;
+                            }
+                            div {
+                                color: #fff;
+                                top: 70px;
+                                position: absolute;
+                                left: 60px;
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+                        }
+                        .badge2 {
+                            visibility: visible;
+                            position: absolute;
+                            top: 0;
+                            left: -185px;
+                            @include media('ssp'){
+                                left: -85px;
+                            }
+                            div {
+                                position: absolute;
+                                top: 138px;
+                                left: 64px;
+                                font-size: 20px;
+                                color: #fff;
+                            }
+                        }
+                        .badge3{
+                            position: absolute;
+                            top: 0;
+                            left: 235px;
+                            @include media('ssp'){
+                                left: 135px;
+                            }
+                            div {
+                                position: absolute;
+                                top: 151px;
+                                left: 38px;
+                                font-size: 20px;
+                                color: #fff;
+                            }
+                        }
+                        .badge4{
+                            position: absolute;
+                            top: 0;
+                            left: 233px;
+                            @include media('ssp'){
+                                left: 133px;
+                            }
+                            div {
+                                position: absolute;
+                                top: 75px;
+                                left: 59px;
+                                color: #fff;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .google-map {
+        margin-top: 200px;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
 footer {
+    @include bgBasic("../img/footer_bg.png",top);
+    padding-top: 400px;
     .upper-footer {
         display: flex;
         justify-content: space-between;
