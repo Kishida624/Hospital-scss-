@@ -192,7 +192,7 @@ header {
                 }
             }
             .top-info {
-                @include media('lb'){
+                @include media('tb'){
                     display: none;
                 }
                 .phone {
@@ -279,6 +279,82 @@ header {
             div address{
                 font-size: 12px;
                 color: $font_color;
+            }
+        }
+    }
+}
+footer {
+    .upper-footer {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        .left-side {
+            table{
+                width: 600px;
+                font-family: $font_kozGoPro;
+                font-size: 18px;
+                color: $font_color;
+                line-height: 24px;
+                text-align: center;
+                thead {
+                    tr {
+                        height: 36px;
+                        background: #E8C01A;
+                        th div {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100%;
+                            height: 36px;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        border:solid #849387;
+                        border-width: 0px 0px 1px 0px;
+                        td {
+                            height: 60px;
+                            div {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                height: 60px;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            p {
+                padding-top: 20px;
+                color: $font_color;
+                font-size: 15px;
+            }
+        }
+        .right-side {
+            .contact-info {
+                display: flex;
+                align-items: baseline;
+                img {
+                    width: 318px;
+                    margin-right: 20px;
+                }
+                div {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        width: 26px;
+                        height: 26px;
+                        object-fit: cover;
+                    }
+                    address {
+                        font-size: 30px;
+                        font-family: $font_kozGoPro;
+                        color: $font_color;
+                    }
+                }
             }
         }
     }

@@ -560,7 +560,7 @@ header .pc-menu .menu-content ul li a img {
   display: block;
   margin: auto;
 }
-@media print, screen and (max-width: 1200px) {
+@media print, screen and (max-width: 991px) {
   header .pc-menu .menu-content .top-info {
     display: none;
   }
@@ -650,5 +650,72 @@ header .sp-menu .mobile-phone .phone .phone-num {
 }
 header .sp-menu .mobile-phone div address {
   font-size: 12px;
+  color: #849387;
+}
+
+footer .upper-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+footer .upper-footer .left-side table {
+  width: 600px;
+  font-family: "KozGoPro";
+  font-size: 18px;
+  color: #849387;
+  line-height: 24px;
+  text-align: center;
+}
+footer .upper-footer .left-side table thead tr {
+  height: 36px;
+  background: #E8C01A;
+}
+footer .upper-footer .left-side table thead tr th div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 36px;
+}
+footer .upper-footer .left-side table tbody tr {
+  border: solid #849387;
+  border-width: 0px 0px 1px 0px;
+}
+footer .upper-footer .left-side table tbody tr td {
+  height: 60px;
+}
+footer .upper-footer .left-side table tbody tr td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+footer .upper-footer .left-side p {
+  padding-top: 20px;
+  color: #849387;
+  font-size: 15px;
+}
+footer .upper-footer .right-side .contact-info {
+  display: flex;
+  align-items: baseline;
+}
+footer .upper-footer .right-side .contact-info img {
+  width: 318px;
+  margin-right: 20px;
+}
+footer .upper-footer .right-side .contact-info div {
+  display: flex;
+  align-items: center;
+}
+footer .upper-footer .right-side .contact-info div img {
+  width: 26px;
+  height: 26px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+footer .upper-footer .right-side .contact-info div address {
+  font-size: 30px;
+  font-family: "KozGoPro";
   color: #849387;
 }/*# sourceMappingURL=main.css.map */
