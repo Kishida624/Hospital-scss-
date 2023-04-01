@@ -665,6 +665,192 @@ header .sp-menu .mobile-phone div address {
   color: #849387;
 }
 
+main {
+  padding-top: 100px;
+  margin-top: -20px;
+  overflow: hidden;
+}
+main .news .container .news-content {
+  width: 90%;
+  max-width: 990px;
+  height: 145px;
+  margin: auto;
+  border: 1px solid #6EB944;
+  border-radius: 20px;
+}
+@media print, screen and (max-width: 991px) {
+  main .news .container .news-content {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .news .container .news-content {
+    max-width: 300px;
+  }
+}
+main .news .container .news-content .news-ttl {
+  position: relative;
+}
+main .news .container .news-content .news-ttl img {
+  margin-top: -67px;
+  margin-left: 35px;
+}
+main .news .container .news-content .news-ttl div {
+  top: -20px;
+  left: 75px;
+  position: absolute;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+main .news .container .news-content .content {
+  width: 480px;
+  text-align: center;
+  margin: auto;
+  color: #EF8337;
+  font-size: 16px;
+  line-height: 27px;
+}
+@media print, screen and (max-width: 991px) {
+  main .news .container .news-content .content {
+    width: 100%;
+    padding: 20px;
+  }
+}
+main .news .container .news-content .news-tree {
+  width: 300px;
+  float: right;
+  margin-right: -77px;
+  margin-top: -18px;
+}
+@media only screen and (max-width: 768px) {
+  main .news .container .news-content .news-tree img {
+    width: 200px;
+  }
+}
+main .info-consult {
+  margin-top: 200px;
+}
+main .info-consult .container {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 768px) {
+  main .info-consult .container {
+    display: block;
+  }
+}
+main .info-consult .container .information {
+  width: 100%;
+  max-width: 600px;
+  padding-right: 20px;
+  text-align: center;
+  margin: auto;
+}
+main .info-consult .container .information .info-ttl .en-ttl {
+  font-size: 12px;
+  color: #6EB944;
+  line-height: 30px;
+}
+main .info-consult .container .information .info-ttl .ja-ttl {
+  font-size: 24px;
+  line-height: 30px;
+  color: #849387;
+}
+main .info-consult .container .information .info-content {
+  padding-top: 50px;
+}
+main .info-consult .container .information .info-content table {
+  width: 100%;
+}
+main .info-consult .container .information .info-content table tr {
+  height: 65px;
+  border: dotted #849387;
+  border-width: 2px 0px 2px 0px;
+}
+main .info-consult .container .information .info-content table tr .info-date {
+  background: #E8C01A;
+  padding-top: 25px;
+}
+main .info-consult .container .information .info-content table tr .info-intro {
+  padding-left: 20px;
+  color: #849387;
+}
+main .info-consult .container .information .notif-list {
+  display: flex;
+  align-items: center;
+  float: right;
+  margin-top: 10px;
+  color: #849387;
+}
+main .info-consult .container .consult {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+@media only screen and (max-width: 768px) {
+  main .info-consult .container .consult {
+    margin-top: 200px;
+  }
+}
+main .info-consult .container .consult .consult-ttl .en-ttl {
+  font-size: 12px;
+  color: #6EB944;
+  line-height: 30px;
+}
+main .info-consult .container .consult .consult-ttl .ja-ttl {
+  font-size: 24px;
+  line-height: 30px;
+  color: #849387;
+}
+main .info-consult .container .consult .consult-content {
+  padding-top: 50px;
+}
+main .info-consult .container .consult .consult-content table {
+  width: 100%;
+  font-family: "KozGoPro";
+  font-size: 18px;
+  color: #849387;
+  line-height: 24px;
+  text-align: center;
+}
+@media print, screen and (max-width: 991px) {
+  main .info-consult .container .consult .consult-content table {
+    margin: auto;
+  }
+}
+main .info-consult .container .consult .consult-content table thead tr {
+  height: 36px;
+  background: #E8C01A;
+}
+main .info-consult .container .consult .consult-content table thead tr th div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 36px;
+}
+main .info-consult .container .consult .consult-content table tbody tr {
+  border: solid #849387;
+  border-width: 0px 0px 1px 0px;
+}
+main .info-consult .container .consult .consult-content table tbody tr td {
+  height: 60px;
+}
+main .info-consult .container .consult .consult-content table tbody tr td div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+main .info-consult .container .consult .ref-time {
+  font-size: 15px;
+  color: #849387;
+  padding-top: 10px;
+}
+
 footer .upper-footer {
   display: flex;
   justify-content: space-between;
