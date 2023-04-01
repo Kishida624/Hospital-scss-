@@ -850,7 +850,293 @@ main .info-consult .container .consult .ref-time {
   color: #849387;
   padding-top: 10px;
 }
+main .sec-calendar {
+  background-image: url("../img/section02_bg01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 200px;
+}
+main .sec-calendar .container .sec-ttl {
+  text-align: center;
+}
+main .sec-calendar .container .sec-ttl .en-ttl {
+  font-size: 12px;
+  color: #6EB944;
+  line-height: 30px;
+}
+main .sec-calendar .container .sec-ttl .ja-ttl {
+  font-size: 24px;
+  color: #849387;
+  line-height: 30px;
+}
+main .sec-calendar .container .calendars {
+  display: flex;
+  justify-content: space-around;
+}
+main .sec-calendar .container .calendars .left-side, main .sec-calendar .container .calendars .right-side {
+  padding-top: 50px;
+  width: 360px;
+}
+main .sec-calendar .container .calendars .left-side .cal-top, main .sec-calendar .container .calendars .right-side .cal-top {
+  text-align: center;
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+main .sec-calendar .container .calendars .left-side .cal-top .cal-ttl, main .sec-calendar .container .calendars .right-side .cal-top .cal-ttl {
+  font-size: 23px;
+  color: #849387;
+}
+main .sec-calendar .container .calendars .left-side .cal-top .month-num, main .sec-calendar .container .calendars .right-side .cal-top .month-num {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E8C01A;
+  color: #fff;
+  font-size: 30px;
+  border-radius: 50%;
+  margin: 0px 20px;
+  margin-top: -20px;
+}
+main .sec-calendar .container .calendars .left-side .cal-top .month-text, main .sec-calendar .container .calendars .right-side .cal-top .month-text {
+  font-size: 27px;
+  color: #E8C01A;
+}
+main .sec-calendar .container .calendars .left-side .calendar, main .sec-calendar .container .calendars .right-side .calendar {
+  margin-top: 20px;
+}
+main .sec-calendar .container .calendars .left-side .calendar table, main .sec-calendar .container .calendars .right-side .calendar table {
+  width: 100%;
+  text-align: center;
+  color: #849387;
+}
+main .sec-calendar .container .calendars .left-side .calendar table thead tr, main .sec-calendar .container .calendars .right-side .calendar table thead tr {
+  background: #E8C01A;
+}
+main .sec-calendar .container .calendars .left-side .calendar table thead tr th, main .sec-calendar .container .calendars .right-side .calendar table thead tr th {
+  width: 50px;
+  height: 50px;
+}
+main .sec-calendar .container .calendars .left-side .calendar table thead tr th div, main .sec-calendar .container .calendars .right-side .calendar table thead tr th div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .sec-calendar .container .calendars .left-side .calendar table tbody tr td, main .sec-calendar .container .calendars .right-side .calendar table tbody tr td {
+  width: 50px;
+  height: 50px;
+}
+main .sec-calendar .container .calendars .left-side .calendar table tbody tr td div, main .sec-calendar .container .calendars .right-side .calendar table tbody tr td div {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .sec-calendar .container .calendars .left-side .calendar table tbody tr td:last-child, main .sec-calendar .container .calendars .right-side .calendar table tbody tr td:last-child {
+  background: #F8ECBA;
+  color: #EF8337;
+}
+main .sec-calendar .container .calendars .left-side .calendar table tbody tr td:nth-child(6), main .sec-calendar .container .calendars .right-side .calendar table tbody tr td:nth-child(6) {
+  background: #E2F1DA;
+  color: #6EB944;
+}
+main .sec-calendar .container .calendars .left-side .cal-footer, main .sec-calendar .container .calendars .right-side .cal-footer {
+  padding-top: 20px;
+  display: flex;
+}
+main .sec-calendar .container .calendars .left-side .cal-footer .h-mark, main .sec-calendar .container .calendars .right-side .cal-footer .h-mark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+main .sec-calendar .container .calendars .left-side .cal-footer .h-mark .holiday, main .sec-calendar .container .calendars .right-side .cal-footer .h-mark .holiday {
+  width: 24px;
+  height: 24px;
+  background: #F8ECBA;
+  border: 1px solid #E8C01A;
+  margin-right: 10px;
+}
+main .sec-calendar .container .calendars .left-side .cal-footer .e-mark, main .sec-calendar .container .calendars .right-side .cal-footer .e-mark {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+main .sec-calendar .container .calendars .left-side .cal-footer .e-mark .evening, main .sec-calendar .container .calendars .right-side .cal-footer .e-mark .evening {
+  width: 24px;
+  height: 24px;
+  background: #E2F1DA;
+  border: 1px solid #E8C01A;
+  margin-right: 10px;
+}
+@media print, screen and (max-width: 991px) {
+  main .sec-calendar .container .calendars .right-side {
+    display: none;
+  }
+}
+main .sec-calendar .container p {
+  text-align: center;
+  color: #849387;
+  font-size: 16px;
+  margin-top: 50px;
+}
+main .introduction {
+  background-image: url("../img/section03_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  margin-top: 200px;
+}
+main .introduction .container .intro-ttl {
+  text-align: center;
+}
+main .introduction .container .intro-ttl .en-ttl {
+  font-size: 12px;
+  line-height: 30px;
+  color: #6EB944;
+  text-transform: uppercase;
+}
+main .introduction .container .intro-ttl .ja-ttl {
+  font-size: 24px;
+  line-height: 30px;
+  color: #849387;
+}
+main .introduction .container .intro-content {
+  margin-top: 50px;
+}
+main .introduction .container .intro-content .group-line {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+@media print, screen and (max-width: 991px) {
+  main .introduction .container .intro-content .group-line {
+    display: block;
+  }
+}
+main .introduction .container .intro-content .group-line .intro-item {
+  position: relative;
+  width: 276px;
+  margin: auto;
+}
+main .introduction .container .intro-content .group-line .intro-item .desc {
+  width: 100%;
+  font-size: 16px;
+  color: #849387;
+}
+main .introduction .container .intro-content .group-line .intro-item.item1 {
+  left: 100px;
+}
+@media only screen and (max-width: 425px) {
+  main .introduction .container .intro-content .group-line .intro-item.item1 {
+    left: 0;
+  }
+}
+main .introduction .container .intro-content .group-line .intro-item.item2 {
+  left: 100px;
+}
+@media only screen and (max-width: 425px) {
+  main .introduction .container .intro-content .group-line .intro-item.item2 {
+    left: 0;
+  }
+}
+main .introduction .container .intro-content .group-line .intro-item .badge1 {
+  position: absolute;
+  top: 0px;
+  left: -190px;
+}
+@media only screen and (max-width: 425px) {
+  main .introduction .container .intro-content .group-line .intro-item .badge1 {
+    left: -90px;
+  }
+}
+main .introduction .container .intro-content .group-line .intro-item .badge1 div {
+  color: #fff;
+  top: 70px;
+  position: absolute;
+  left: 60px;
+  font-size: 20px;
+  line-height: 30px;
+}
+main .introduction .container .intro-content .group-line .intro-item .badge2 {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: -185px;
+}
+@media only screen and (max-width: 425px) {
+  main .introduction .container .intro-content .group-line .intro-item .badge2 {
+    left: -85px;
+  }
+}
+main .introduction .container .intro-content .group-line .intro-item .badge2 div {
+  position: absolute;
+  top: 138px;
+  left: 64px;
+  font-size: 20px;
+  color: #fff;
+}
+main .introduction .container .intro-content .group-line .intro-item .badge3 {
+  position: absolute;
+  top: 0;
+  left: 235px;
+}
+@media only screen and (max-width: 425px) {
+  main .introduction .container .intro-content .group-line .intro-item .badge3 {
+    left: 135px;
+  }
+}
+main .introduction .container .intro-content .group-line .intro-item .badge3 div {
+  position: absolute;
+  top: 151px;
+  left: 38px;
+  font-size: 20px;
+  color: #fff;
+}
+main .introduction .container .intro-content .group-line .intro-item .badge4 {
+  position: absolute;
+  top: 0;
+  left: 233px;
+}
+@media only screen and (max-width: 425px) {
+  main .introduction .container .intro-content .group-line .intro-item .badge4 {
+    left: 133px;
+  }
+}
+main .introduction .container .intro-content .group-line .intro-item .badge4 div {
+  position: absolute;
+  top: 75px;
+  left: 59px;
+  color: #fff;
+  font-size: 20px;
+}
+main .google-map {
+  margin-top: 200px;
+}
+main .google-map img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
+footer {
+  background-image: url("../img/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 400px;
+}
 footer .upper-footer {
   display: flex;
   justify-content: space-between;
